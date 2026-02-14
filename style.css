@@ -6,56 +6,39 @@
 }
 
 body {
-    background: #f8f8f8;
+    background: #f8f9fa;
     color: #222;
 }
 
 header {
-    background: #111;
-    padding: 20px 40px;
+    background: #ff6f61;
+    color: white;
     display: flex;
     justify-content: space-between;
+    padding: 15px 40px;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.logo {
-    color: #1db954;
-    font-size: 1.8rem;
+header nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
     font-weight: bold;
 }
 
-nav a,
-header .btn {
-    margin-left: 20px;
-    text-decoration: none;
-    color: white;
-}
-
-.header-btn {
-    background: #1db954;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 25px;
-    cursor: pointer;
-}
-
 .hero {
-    background: url('https://images.unsplash.com/photo-1495121605193-b116b5b09a36') center/cover no-repeat;
-    height: 450px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: url('https://images.unsplash.com/photo-1556740767-3f0f2f0b1b9c') center/cover no-repeat;
     text-align: center;
+    padding: 120px 20px;
+    color: white;
 }
 
 .hero h1 {
     font-size: 2.8rem;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 1.2rem;
+    margin-bottom: 15px;
 }
 
 .section {
@@ -64,54 +47,52 @@ header .btn {
 }
 
 .dark {
-    background: #111;
+    background: #1e1e1e;
     color: white;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
     margin-top: 30px;
 }
 
-.card,
-.product-card {
+.card {
     background: white;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-    padding: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     transition: 0.3s;
 }
 
-.card img,
-.product-card img {
+.card img {
     width: 100%;
-    height: 180px;
+    height: 200px;
     object-fit: cover;
 }
 
+.card:hover {
+    transform: translateY(-8px);
+}
+
 .card h3 {
-    margin-top: 10px;
-    font-size: 1.1rem;
+    margin: 15px 0 5px;
 }
 
-.product-card p {
-    margin: 8px 0;
-}
-
-.price {
-    font-weight: bold;
-    color: #1db954;
+.card p {
+    padding: 0 15px 15px;
+    font-size: 0.9rem;
 }
 
 .btn {
-    background: #1db954;
+    display: inline-block;
+    background: #ff6f61;
     color: white;
-    border: none;
     padding: 10px 20px;
+    margin: 15px 0;
     border-radius: 25px;
+    border: none;
     cursor: pointer;
 }
 
@@ -119,9 +100,22 @@ header .btn {
     padding: 8px 15px;
 }
 
+input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
 footer {
-    background: #111;
-    color: #888;
-    padding: 20px;
+    background: #333;
+    color: #aaa;
     text-align: center;
+    padding: 20px;
+}
+
+@media(max-width:768px){
+    .hero h1 {
+        font-size: 2rem;
+    }
 }
