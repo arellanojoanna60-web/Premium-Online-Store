@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>NicheHub | Premium Online Store</title>
+    <title>NicheHub | Trendy Products for Sellers & Resellers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Shop trending niche products for brands, resellers, and online sellers — from fashion and fitness to tech accessories and eco-goods.">
+    <meta name="description" content="Discover top trending niche products for online sellers, brands, and resellers. Shop unique items in gadgets, fashion, home, beauty, and more.">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,114 +14,113 @@
 <header>
     <div class="logo">NicheHub</div>
     <nav>
-        <a href="#collections">Collections</a>
-        <a href="#trending">Trending</a>
-        <a href="#about">About</a>
+        <a href="#trending">Trending Niches</a>
+        <a href="#products">Products</a>
+        <a href="#subscribe">Subscribe</a>
         <a href="#contact">Contact</a>
-        <button class="btn header-btn">Shop Now</button>
     </nav>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-    <div class="hero-text">
-        <h1>Discover the Best Niche Products Online</h1>
-        <p>Trusted by sellers, brands & resellers worldwide</p>
-        <a href="#collections" class="btn">Browse Collections</a>
+    <div class="hero-content">
+        <h1>Find Top Trending Products for Your Store</h1>
+        <p>Unique products curated for online sellers, brands, and resellers. Stay ahead of the trends!</p>
+        <a href="#products" class="btn">Shop Trending</a>
     </div>
 </section>
 
-<!-- COLLECTIONS -->
-<section id="collections" class="section">
+<!-- TRENDING NICHES -->
+<section id="trending" class="section">
     <h2>Top Trending Niches</h2>
-
     <div class="grid">
 
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f" alt="Fashion">
-            <h3>Fashion & Apparel</h3>
+            <img src="https://images.unsplash.com/photo-1606813903172-2e7c6b2c6a21" alt="Gadgets">
+            <h3>Gadgets & Electronics</h3>
         </div>
 
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1585386959984-a41552285242" alt="Tech Accessories">
-            <h3>Tech & Accessories</h3>
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="Fashion">
+            <h3>Fashion & Accessories</h3>
         </div>
 
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" alt="Beauty Products">
+            <img src="https://images.unsplash.com/photo-1602526211107-f93e84f03b9d" alt="Beauty">
             <h3>Beauty & Skincare</h3>
         </div>
 
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" alt="Home Goods">
-            <h3>Home & Lifestyle</h3>
+            <img src="https://images.unsplash.com/photo-1505691723518-36a9b6c1e21f" alt="Home">
+            <h3>Home & Decor</h3>
         </div>
 
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b" alt="Fitness Gear">
-            <h3>Fitness & Wellness</h3>
+            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445" alt="Fitness">
+            <h3>Fitness & Sports</h3>
         </div>
 
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def" alt="Eco Products">
-            <h3>Eco & Sustainable</h3>
+            <img src="https://images.unsplash.com/photo-1592878901484-8b9de5e12b3c" alt="Pet Supplies">
+            <h3>Pet Supplies</h3>
         </div>
 
     </div>
 </section>
 
-<!-- TRENDING PRODUCTS -->
-<section id="trending" class="section dark">
-    <h2>Trending Now</h2>
-
+<!-- PRODUCTS -->
+<section id="products" class="section dark">
+    <h2>Trending Products</h2>
     <div class="grid">
 
-        <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f" alt="Product">
-            <p>Stylish Graphic Tee</p>
-            <p class="price">$24.99</p>
-            <button class="btn small">Add to Cart</button>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1593642532400-2682810df593" alt="Wireless Earbuds">
+            <h3>Wireless Earbuds</h3>
+            <p>Perfect for tech-savvy users.</p>
+            <button class="btn small" onclick="addToCart('Wireless Earbuds')">Add to Cart</button>
         </div>
 
-        <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1585386959984-a41552285242" alt="Product">
-            <p>Wireless Earbuds</p>
-            <p class="price">$49.99</p>
-            <button class="btn small">Add to Cart</button>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f" alt="Smartwatch">
+            <h3>Smartwatch</h3>
+            <p>Stylish and functional wearable.</p>
+            <button class="btn small" onclick="addToCart('Smartwatch')">Add to Cart</button>
         </div>
 
-        <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" alt="Product">
-            <p>Organic Skin Serum</p>
-            <p class="price">$32.50</p>
-            <button class="btn small">Add to Cart</button>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1589571894960-20bbe2828fdb" alt="Organic Skincare">
+            <h3>Organic Skincare Set</h3>
+            <p>Premium beauty products for all skin types.</p>
+            <button class="btn small" onclick="addToCart('Organic Skincare Set')">Add to Cart</button>
         </div>
 
-        <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" alt="Product">
-            <p>Ceramic Home Vase</p>
-            <p class="price">$28.00</p>
-            <button class="btn small">Add to Cart</button>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1567016549972-bad6eb1c11a1" alt="Fitness Bands">
+            <h3>Fitness Resistance Bands</h3>
+            <p>For home workouts and training.</p>
+            <button class="btn small" onclick="addToCart('Fitness Resistance Bands')">Add to Cart</button>
         </div>
 
     </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="section">
-    <h2>About NicheHub</h2>
-    <p>NicheHub is a curated marketplace for online sellers, brands, and resellers. We feature high-quality products in trending niches — so you can source, sell, and scale your business with confidence.</p>
+<!-- SUBSCRIBE -->
+<section id="subscribe" class="section">
+    <h2>Get Weekly Niche Updates</h2>
+    <p>Subscribe to receive top trending products directly to your inbox.</p>
+    <input type="email" placeholder="Enter your email">
+    <button class="btn">Subscribe</button>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="section dark">
     <h2>Contact Us</h2>
     <p>Email: support@nichehub.com</p>
-    <p>Phone: +1 (800) 555-1234</p>
+    <p>Phone: +63 900 000 0000</p>
 </section>
 
 <footer>
-    <p>© 2026 NicheHub | Your Online Niche Marketplace</p>
+    <p>© 2026 NicheHub | Trendy Products Marketplace</p>
 </footer>
 
 <script src="script.js"></script>
